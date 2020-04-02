@@ -1,6 +1,18 @@
+html{
+   scroll-behavior:smooth;
+}
+@media (min-width: 800px) {
+  .navbar-collapse {
+    display: none;
+  }
+}
 #navbar{
   position:fixed;
   width:100%;
+  
+}
+.navbar{
+  margin-bottom: 0px !important;
 }
 #welcome-section{
   display:flex;
@@ -10,10 +22,19 @@
     width: 100%;
     align-items: center;
     flex-direction: column;
+  margin-bottom: -20px;
 }
-#welcome-section p{
+.caption{
   color: mediumaquamarine;
   font-size: 18px;
+}
+.about{
+  color: thistle;
+    width: 100%;
+    padding: 25px;
+    margin: 10px;
+    font-size: large;
+    font-family: -webkit-pictograph;
 }
 #welcome-section h1{
   color: silver;
