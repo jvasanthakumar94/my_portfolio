@@ -28,13 +28,20 @@ html{
   color: mediumaquamarine;
   font-size: 18px;
 }
-.about{
+.about {
   color: thistle;
-    width: 100%;
-    padding: 25px;
-    margin: 10px;
-    font-size: large;
-    font-family: -webkit-pictograph;
+  width: 36em;
+  max-width: 100%;
+  padding: 25px;
+  margin: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: -webkit-pictograph;
+}
+@media (max-width: 320px) {
+  .about {
+    font-size: 16px;
+  }
 }
 #welcome-section h1{
   color: silver;
