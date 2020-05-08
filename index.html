@@ -7,9 +7,10 @@
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-<!-- Optional theme -->
+<!-- Optional theme --> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
+<link href="./aos.css" rel="stylesheet">
+<script src="./aos.js"></script> 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
  <title>my_portfolio</title>
@@ -39,50 +40,57 @@
 </nav>
 
   <section id="welcome-section">
-    <h1>Hello! I'm Vasanth </h1>
-    <p class="caption">- I am a <em>software engineer @ cognizant</em></p>
+    <h1 data-aos="flip-down">Hello! I'm Vasanth </h1>
+    <p class="caption" data-aos="fade-right">- I am a <em>software engineer @ cognizant</em></p>
     <section class="about">
-    <p>Ecommerce Developer with a demonstrated history of working in the information technology and services industry. Skilled in IBM Websphere commerce, Selenium WebDriver, Jenkins, Java, HTML, Jira, Postman and SQL</p>
+    <p data-aos="fade-left">Ecommerce Developer with a demonstrated history of working in the information technology and services industry. Skilled in IBM Websphere commerce, Selenium WebDriver, Jenkins, Java, HTML, Jira, Postman and SQL</p>
     </section>
   </section>
   <section id="projects" >
-    <h2>View my projects</h2>
+    <h2 data-aos="flip-down"> View my projects</h2> 
     <div id="grid-container">
-      <div id="grid-item">
+      <div id="grid-item" data-aos="fade-right">
         <a id="project-link" href="https://jvasanthakumar94.github.io/tribute_page/" target="_blank">
          <img id="product-image" src="https://screenshot.codepen.io/4264146.yLNZNrK.b6552895-2d54-443f-b756-b337ccd03fc5.png" alT="Tribute Page">
            <p class="project-tile">Tribute page</p>
         </a>
        
       </div>
-      <div id="grid-item">
+      <div id="grid-item" data-aos="fade-left">
         <a id="project-link" href="https://jvasanthakumar94.github.io/survey_form/" target="_blank">
          <img id="product-image" src="https://screenshot.codepen.io/4264146.MWwzOaR.6ad3974d-db6c-4948-9c00-a12eb8306017.png" alT="Survey Form">
            <p class="project-tile">Survey Form</p>
         </a>
       </div>
-     <div id="grid-item">
+     <div id="grid-item" data-aos="flip-left">
         <a id="project-link" href="https://jvasanthakumar94.github.io/product_landing/" target="_blank">
          <img id="product-image" src="https://screenshot.codepen.io/4264146.NWqELdW.b5dbe7cb-353d-4f7c-a1ba-30ca67a40900.png" alT="Product_page">
            <p class="project-tile">Product page</p>
         </a>
       </div>
-      <div id="grid-item">
+      <div id="grid-item" data-aos="flip-right">
         <a id="project-link" href="https://jvasanthakumar94.github.io/documentation_page/" target="_blank">
          <img id="product-image" src="https://screenshot.codepen.io/4264146.oNXQKOJ.d7d0af8f-58c0-40fa-99ef-9505a463a862.png" alT="Documentation_page">
            <p class="project-tile">Documentation page</p>
         </a>
       </div>
-	   <div id="grid-item">
+	   <div id="grid-item" data-aos="zoom-in-up">
         <a id="project-link" href="https://jvasanthakumar94.github.io/Random-Quote-Machine/" target="_blank">
          <img id="product-image" src="https://screenshot.codepen.io/4264146.mderVYR.686e27f0-8e0c-4185-8091-40f092e1cc56.png" alT="Survey Form">
            <p class="project-tile">Random Quote Machine</p>
         </a>
       </div>
-       <div id="grid-item">
+       <div id="grid-item" data-aos="zoom-in-down">
         <a id="project-link" href="https://jvasanthakumar94.github.io/coVid19/" target="_blank">
          <img id="product-image" src="https://screenshot.codepen.io/4264146.zYvZBGg.72d6e898-24e7-4506-9b76-dc96b6d637f4.png" alT="Survey Form">
            <p class="project-tile">Covid Tracker</p>
+        </a>
+      </div>
+      <div id="grid-item" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"> 
+        <a id="project-link" href="https://jvasanthakumar94.github.io/AuthorQuiz/" target="_blank">
+         <img id="product-image" src="./images/Author_Quiz.png" alT="Survey Form">
+           <p class="project-tile">Author Quiz</p>
         </a>
       </div>
     </div>
@@ -90,13 +98,13 @@
   <section id="Profile">
     <h2>View my profiles</h2>
     <div id="grid-container-profile">
-      <div id="grid-item-profile">
+      <div id="grid-item-profile" data-aos="zoom-out-right" >
         <a id="profile-link"  href="https://github.com/jvasanthakumar94" target="_blank">
           <img id="profile-image" src="https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png" alt="GitHub Logo">
           <h3>GitHub</h3>
         </a>
       </div>
-       <div id="grid-item-profile">
+       <div id="grid-item-profile" data-aos="zoom-out-left">
         <a id="profile-link"  href="https://twitter.com/Vasantha_KumarJ" target="_blank">
           <img id="profile-image" src="https://seeklogo.com/images/T/twitter-logo-A84FE9258E-seeklogo.com.png" alt="Twitter Logo">
           <h3>Twitter</h3>
@@ -106,6 +114,13 @@
   </section>
 </main>
 
-
+<script>
+AOS.init(
+     {offset: 100,
+  duration: 800,
+  easing: 'ease-in-quad',
+  delay: 50}
+);
+</script>
 </body>
 </html>

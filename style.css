@@ -123,10 +123,12 @@ html{
 @media (min-width:1080px){
   #grid-container{
   display:grid;
-  grid-template-columns: auto auto;
+  
   grid-gap: 4rem;
     width: 100%;
    padding: 25px;
   border-radius:2px;
 }
 }
+
+html, body { overflow-x: hidden}
